@@ -1,11 +1,11 @@
 apiVersion: backstage.io/v1alpha1
-kind: EdgeNetwork
+kind: Component
 metadata:
   name: "awesome"
   annotations:
     backstage.io/kubernetes-label-selector: 'app=edge-network-awesome'
     argocd/app-name: awesome
 spec:
-  type: service
+  type: EdgeNetwork
   owner: user:default/matmah
   lifecycle: experimental
