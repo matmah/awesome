@@ -5,6 +5,10 @@ metadata:
   annotations:
     backstage.io/kubernetes-label-selector: 'app=edge-network-awesome'
     argocd/app-name: awesome
+  links:
+    - url: https://www.ci4rail.com
+      title: Ci4Rail Website
+      icon: backstage
 spec:
   type: EdgeNetwork
   owner: user:default/matmah
