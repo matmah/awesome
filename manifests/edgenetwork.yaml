@@ -1,13 +1,13 @@
 apiVersion: network.edgefarm.io/v1alpha1
 kind: EdgeNetwork
 metadata:
-  name: edge-network-awesome'
+  name: edge-network-awesome
   labels:
-    app: edge-network-awesome'
+    app: edge-network-awesome
 spec:
   nodeSelector: 
-    project: awesome'
-  network: test-network-def-awesome'
+    project: awesome
+  network: test-network-def-awesome
   limits:
     fileStorage: 10G
     inMemoryStorage: 1G
