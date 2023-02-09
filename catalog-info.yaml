@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: "awesome"
   annotations:
-    backstage.io/kubernetes-label-selector: 'app=edge-network-awesome'
+    backstage.io/kubernetes-label-selector: 'app=edge-network-awesome,network.edgefarm.io/name: edge-network-awesome'
 spec:
   type: service
   owner: user:default/matmah
