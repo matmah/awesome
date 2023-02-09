@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: 'edge-network-nginx-awesome'
+  labels:
+    app: 'edge-network-awesome'
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: 'edge-network-awesome'
+  template:
+    metadata:
+      labels:
+        app: 'edge-network-awesome'
+    spec:
+      containers:
+        - name: 'edge-network-nginx-awesome'
+          image: nginx:latest
+          imagePullPolicy: Always

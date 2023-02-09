@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "awesome"
+  annotations:
+    backstage.io/kubernetes-label-selector: 'app=edge-network-awesome'
+spec:
+  type: service
+  owner: user:default/matmah
+  lifecycle: experimental

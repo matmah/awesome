@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: edgenetwork-foo
+  labels:
+    app: edgenetwork-foo
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: edgenetwork-foo
+  template:
+    metadata:
+      labels:
+        app: edgenetwork-foo
+    spec:
+      containers:
+        - name: edgenetwork-foo
+          image: nginx:latest
+          imagePullPolicy: Always
